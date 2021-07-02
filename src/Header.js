@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import { Home, Search, SupervisorAccount } from "@material-ui/icons";
+import { BusinessCenter, Chat, Home, Notifications, Search, SupervisorAccount } from "@material-ui/icons";
 import HeaderOptions from "./HeaderOptions";
 
 function Header() {
@@ -21,6 +21,10 @@ function Header() {
       <div className="header__right">
         <HeaderOptions Icon={Home} title="Home" />
         <HeaderOptions Icon={SupervisorAccount} title="My Network" />
+        <HeaderOptions Icon={BusinessCenter} title="Jobs" />
+        <HeaderOptions Icon={Chat} title="Messaging" />
+        <HeaderOptions Icon={Notifications} title="Notifications" />
+        <HeaderOptions avatar="https://compassionate-leakey-e9b16b.netlify.app/images/IG_Sonny.jpeg" title="Me"/>
       </div>
     </div>
   );
